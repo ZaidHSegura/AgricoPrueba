@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invernaderos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container" id="mainContainer">
+        <h1><img src="img/Agrico.png" alt="Agrico Logo"></h1>
+        <div class="greenhouse" id="greenhouse1" onclick="viewGreenhouse('2OTE')">
+            <h2>2OTE</h2>
+        </div>
+        <div class="greenhouse" id="greenhouse2" onclick="viewGreenhouse('2PTE')">
+            <h2>2PTE</h2>
+        </div>
+        <div class="greenhouse" id="greenhouse3" onclick="viewGreenhouse('3PTE')">
+            <h2>3PTE</h2>
+        </div>
+        <div class="greenhouse" id="scanCode" onclick="scanCode()">
+            <h2>Escanear Código</h2>
+        </div>
+    </div>
+    
+    <div class="details" id="details">
+        <h2 id="greenhouseTitle"></h2>
+        <p>Seleccione una opción</p>
+        <div class="options" id="optionsContainer">
+            <!-- Los botones se generarán dinámicamente -->
+        </div>
+        <button id="bottomBackButton" onclick="goBack()">Volver</button>
+    </div>
+
+    <!-- Contenedores específicos para cada sección -->
+    <div class="details" id="electricContent2OTE">
+        <h2>Eléctricos 2 OTE</h2>
+        <p>Contenido específico para Eléctricos 2 OTE</p>
+        <div class="button-container">
+            <button class="goBack electric-back-button" onclick="goBackToDetails()">Volver</button>
+            <button class="goToMain electric-home-button" onclick="goBackToMain()">Inicio</button>
+        </div>
+        <div class="sections-container">
+            <!-- Secciones numeradas -->
+
+            <div class="section-box">
+              <img class="section-image" src="img/C12OTE.png" alt="C12OTE">
+            </div>
+
+            <div class="section-box">
+              <img class="section-image" src="img/C22OTE.png" alt="C22OTE">
+            </div>
+
+            <div class="section-box">
+              <img class="section-image" src="img/C32OTE.png" alt="C32OTE">
+            </div>
+
+            <div class="section-box">
+              <img class="section-image" src="img/C42OTE.png" alt="C42OTE">
+            </div>
+
+            <div class="section-box">
+              <img class="section-image" src="img/C52OTE.png" alt="C52OTE">
+            </div>
+
+            <div class="section-box">
+              <img class="section-image" src="img/C62OTE.png" alt="C62OTE">
+            </div>
+
+            <div class="section-box">
+              <img class="section-image" src="img/C72OTE.png" alt="C72OTE">
+            </div>
+
+            <div class="section-box">
+              <img class="section-image" src="img/C82OTE.png" alt="C82OTE">
+            </div>
+
+            <div class="section-box">
+              <img class="section-image" src="img/C92OTE.png" alt="C92OTE">
+            </div>
+
+            <div class="section-box">
+              <img class="section-image" src="img/C102OTE.png" alt="C102OTE">
+            </div>
+
+            <div class="section-box">
+              <img class="section-image" src="img/C112OTE.png" alt="C112OTE">
+            </div>
+
+            <div class="section-box">
+              <img class="section-image" src="img/C122OTE.png" alt="C122OTE">
+            </div>
+
+            <div class="section-box">
+              <img class="section-image" src="img/C132OTE.png" alt="C132OTE">
+            </div>
+
+            <div class="section-box">
+              <img class="section-image" src="img/C142OTE.png" alt="C142OTE">
+            </div>
+
+            <div class="section-box">
+              <img class="section-image" src="img/C152OTE.png" alt="C152OTE">
+            </div>
+
+            <div class="section-box">
+              <img class="section-image" src="img/C162OTE.png" alt="C162OTE">
+            </div>
+        </div>
+    </div>
+    
+    <div class="details" id="electricContent2PTE">
+        <h2>Eléctricos 2 PTE</h2>
+        <p>Contenido específico para Eléctricos 2 PTE</p>
+        <div class="button-container">
+            <button class="goBack electric-back-button" onclick="goBackToDetails()">Volver</button>
+            <button class="goToMain electric-home-button" onclick="goBackToMain()">Inicio</button>
+        </div>
+    </div>
+
+    <div class="details" id="electricContent3PTE">
+        <h2>Eléctricos 3 PTE</h2>
+        <p>Contenido específico para Eléctricos 3 PTE</p>
+        <div class="button-container">
+            <button class="goBack electric-back-button" onclick="goBackToDetails()">Volver</button>
+            <button class="goToMain electric-home-button" onclick="goBackToMain()">Inicio</button>
+        </div>
+    </div>
+
+    <div class="details" id="hydraulicContent2OTE">
+        <h2>Hidráulicos 2 OTE</h2>
+        <p>Contenido específico para Hidráulicos 2 OTE</p>
+        <div class="button-container">
+            <button class="goBack hydraulic-back-button" onclick="goBackToDetails()">Volver</button>
+            <button class="goToMain hydraulic-home-button" onclick="goBackToMain()">Inicio</button>
+        </div>
+    </div>
+
+    <div class="details" id="hydraulicContent2PTE">
+        <h2>Hidráulicos 2 PTE</h2>
+        <p>Contenido específico para Hidráulicos 2 PTE</p>
+        <div class="button-container">
+            <button class="goBack hydraulic-back-button" onclick="goBackToDetails()">Volver</button>
+            <button class="goToMain hydraulic-home-button" onclick="goBackToMain()">Inicio</button>
+        </div>
+    </div>
+
+    <div class="details" id="hydraulicContent3PTE">
+        <h2>Hidráulicos 3 PTE</h2>
+        <p>Contenido específico para Hidráulicos 3 PTE</p>
+        <div class="button-container">
+            <button class="goBack hydraulic-back-button" onclick="goBackToDetails()">Volver</button>
+            <button class="goToMain hydraulic-home-button" onclick="goBackToMain()">Inicio</button>
+        </div>
+    </div>
+
+    <div class="details" id="loadersContent2OTE">
+        <h2>Cargadores 2 OTE</h2>
+        <p>Contenido específico para Cargadores 2 OTE</p>
+        <div class="button-container">
+            <button class="goBack loaders-back-button" onclick="goBackToDetails()">Volver</button>
+            <button class="goToMain loaders-home-button" onclick="goBackToMain()">Inicio</button>
+        </div>
+    </div>
+
+    <div class="details" id="loadersContent2PTE">
+        <h2>Cargadores 2 PTE</h2>
+        <p>Contenido específico para Cargadores 2 PTE</p>
+        <div class="button-container">
+            <button class="goBack loaders-back-button" onclick="goBackToDetails()">Volver</button>
+            <button class="goToMain loaders-home-button" onclick="goBackToMain()">Inicio</button>
+        </div>
+    </div>
+
+    <div class="details" id="loadersContent3PTE">
+        <h2>Cargadores 3 PTE</h2>
+        <p>Contenido específico para Cargadores 3 PTE</p>
+        <div class="button-container">
+            <button class="goBack loaders-back-button" onclick="goBackToDetails()">Volver</button>
+            <button class="goToMain loaders-home-button" onclick="goBackToMain()">Inicio</button>
+        </div>
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
+
