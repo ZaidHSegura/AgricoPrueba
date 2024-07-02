@@ -167,6 +167,7 @@ button.goToMain:hover {
 
 /* Estilos de los recuadros de secciones */
 .section-box {
+    position: relative; /* Necesario para la superposición del texto */
     background-color: none; /* Color de fondo */
     border: 1px solid none; /* Borde gris */
     border-radius: 8px; /* Bordes redondeados */
@@ -182,7 +183,7 @@ button.goToMain:hover {
 
 /* Estilos de las imágenes en las secciones */
 .section-image {
-    width: 80%; /* Ajusta el ancho al 100% del contenedor */
+    width: 80%; /* Ajusta el ancho al 80% del contenedor */
     height: auto; /* Ajusta automáticamente la altura proporcionalmente */
     max-width: 400px; /* Establece un ancho máximo para la imagen */
     max-height: 200px; /* Establece una altura máxima para la imagen */
@@ -190,4 +191,100 @@ button.goToMain:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
     margin-bottom: 5px; /* Margen inferior */
 }
+
+/* Estilos para el texto sobre las imágenes */
+.text-overlay {
+    position: absolute;
+    top: 10.5px; /* Ajusta la posición vertical del texto */
+    left: 52px; /* Ajusta la posición horizontal del texto */
+    color: white; /* Color del texto */
+    background-color: none; /* Fondo semitransparente */
+    padding: 5px 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 0.6em; /* Tamaño de la fuente */
+    z-index: 1; /* Asegura que el texto esté sobre la imagen */
+    font-weight: bold; /* Establece el texto en negritas */
+}
+
+/* Estilos para el texto sobre las imágenes */
+.Text-name {
+    position: absolute;
+    top: 19px; /* Ajusta la posición vertical del texto */
+    left: 188px; /* Ajusta la posición horizontal del texto */
+    color: black; /* Color del texto */
+    background-color: none; /* Fondo semitransparente */
+    padding: 5px 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 0.4em; /* Tamaño de la fuente */
+    z-index: 1; /* Asegura que el texto esté sobre la imagen */
+    font-weight: bold; /* Establece el texto en negritas */
+    font-family: Calibri; /* Cambia el tipo de fuente */
+}
+
+/* Estilos para el texto sobre las imágenes */
+.Text-status {
+    position: absolute;
+    top: 34px; /* Ajusta la posición vertical del texto */
+    left: 270px; /* Ajusta la posición horizontal del texto */
+    color: black; /* Color del texto */
+    background-color: none; /* Fondo semitransparente */
+    padding: 5px 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 0.4em; /* Tamaño de la fuente */
+    z-index: 1; /* Asegura que el texto esté sobre la imagen */
+    font-weight: bold; /* Establece el texto en negritas */
+    font-family: Calibri; /* Cambia el tipo de fuente */
+}
+
+.text-Date {
+    position: absolute;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.38em;
+    font-weight: bold;
+    font-family: Calibri;
+    z-index: 1;
+}
+
+.Baterias {
+    top: 89px; /* Ajusta la posición vertical del primer texto */
+    left: 125.5px; /* Ajusta la posición horizontal del primer texto */
+}
+
+.MicroSwitch {
+    top: 89px; /* Ajusta la posición vertical del segundo texto */
+    left: 178.5px; /* Ajusta la posición horizontal del segundo texto */
+}
+
+.Paro {
+    top: 89px; /* Ajusta la posición vertical del tercer texto */
+    left: 231.5px; /* Ajusta la posición horizontal del tercer texto */
+}
+
+.Potenciometro {
+    top: 89px; /* Ajusta la posición vertical del cuarto texto */
+    left: 284.5px; /* Ajusta la posición horizontal del cuarto texto */
+}
+
+.Selector {
+    top: 140px; /* Ajusta la posición vertical del quinto texto */
+    left: 125.5px; /* Ajusta la posición horizontal del quinto texto */
+}
+
+.Anderson {
+    top: 140px; /* Ajusta la posición vertical del sexto texto */
+    left: 178.5px; /* Ajusta la posición horizontal del sexto texto */
+}
+
+.Indicador {
+    top: 140px; /* Ajusta la posición vertical del séptimo texto */
+    left: 231.5px; /* Ajusta la posición horizontal del séptimo texto */
+}
+
+.Tarjeta {
+    top: 140px; /* Ajusta la posición vertical del octavo texto */
+    left: 284.5px; /* Ajusta la posición horizontal del octavo texto */
+}
+
 
