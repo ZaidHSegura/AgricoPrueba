@@ -254,17 +254,17 @@ button.goToMain:hover {
 
 .MicroSwitch {
     top: 94px; /* Ajusta la posición vertical del segundo texto */
-    left: 186.5px; /* Ajusta la posición horizontal del segundo texto */
+    left: 188.5px; /* Ajusta la posición horizontal del segundo texto */
 }
 
 .Paro {
     top: 94px; /* Ajusta la posición vertical del tercer texto */
-    left: 239.5px; /* Ajusta la posición horizontal del tercer texto */
+    left: 241.5px; /* Ajusta la posición horizontal del tercer texto */
 }
 
 .Potenciometro {
     top: 94px; /* Ajusta la posición vertical del cuarto texto */
-    left: 292.5px; /* Ajusta la posición horizontal del cuarto texto */
+    left: 294.5px; /* Ajusta la posición horizontal del cuarto texto */
 }
 
 .Selector {
@@ -274,17 +274,17 @@ button.goToMain:hover {
 
 .Anderson {
     top: 145px; /* Ajusta la posición vertical del sexto texto */
-    left: 186.5px; /* Ajusta la posición horizontal del sexto texto */
+    left: 188.5px; /* Ajusta la posición horizontal del sexto texto */
 }
 
 .Indicador {
     top: 145px; /* Ajusta la posición vertical del séptimo texto */
-    left: 239.5px; /* Ajusta la posición horizontal del séptimo texto */
+    left: 241.5px; /* Ajusta la posición horizontal del séptimo texto */
 }
 
 .Tarjeta {
     top: 145px; /* Ajusta la posición vertical del octavo texto */
-    left: 292.5px; /* Ajusta la posición horizontal del octavo texto */
+    left: 294.5px; /* Ajusta la posición horizontal del octavo texto */
 }
 
 
