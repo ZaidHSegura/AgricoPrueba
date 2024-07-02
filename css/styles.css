@@ -210,7 +210,7 @@ button.goToMain:hover {
 .Text-name {
     position: absolute;
     top: 21px; /* Ajusta la posición vertical del texto */
-    left: 192px; /* Ajusta la posición horizontal del texto */
+    left: 194px; /* Ajusta la posición horizontal del texto */
     color: black; /* Color del texto */
     background-color: none; /* Fondo semitransparente */
     padding: 5px 10px; /* Espaciado interno */
@@ -224,8 +224,8 @@ button.goToMain:hover {
 /* Estilos para el texto sobre las imágenes */
 .Text-status {
     position: absolute;
-    top: 37px; /* Ajusta la posición vertical del texto */
-    left: 273px; /* Ajusta la posición horizontal del texto */
+    top: 35px; /* Ajusta la posición vertical del texto */
+    left: 275px; /* Ajusta la posición horizontal del texto */
     color: black; /* Color del texto */
     background-color: none; /* Fondo semitransparente */
     padding: 5px 10px; /* Espaciado interno */
@@ -248,43 +248,43 @@ button.goToMain:hover {
 }
 
 .Baterias {
-    top: 92px; /* Ajusta la posición vertical del primer texto */
-    left: 128.5px; /* Ajusta la posición horizontal del primer texto */
+    top: 94px; /* Ajusta la posición vertical del primer texto */
+    left: 131.5px; /* Ajusta la posición horizontal del primer texto */
 }
 
 .MicroSwitch {
-    top: 92px; /* Ajusta la posición vertical del segundo texto */
-    left: 181.5px; /* Ajusta la posición horizontal del segundo texto */
+    top: 94px; /* Ajusta la posición vertical del segundo texto */
+    left: 184.5px; /* Ajusta la posición horizontal del segundo texto */
 }
 
 .Paro {
-    top: 92px; /* Ajusta la posición vertical del tercer texto */
-    left: 234.5px; /* Ajusta la posición horizontal del tercer texto */
+    top: 94px; /* Ajusta la posición vertical del tercer texto */
+    left: 237.5px; /* Ajusta la posición horizontal del tercer texto */
 }
 
 .Potenciometro {
-    top: 92px; /* Ajusta la posición vertical del cuarto texto */
-    left: 287.5px; /* Ajusta la posición horizontal del cuarto texto */
+    top: 94px; /* Ajusta la posición vertical del cuarto texto */
+    left: 290.5px; /* Ajusta la posición horizontal del cuarto texto */
 }
 
 .Selector {
-    top: 143px; /* Ajusta la posición vertical del quinto texto */
-    left: 128.5px; /* Ajusta la posición horizontal del quinto texto */
+    top: 145px; /* Ajusta la posición vertical del quinto texto */
+    left: 131.5px; /* Ajusta la posición horizontal del quinto texto */
 }
 
 .Anderson {
-    top: 143px; /* Ajusta la posición vertical del sexto texto */
-    left: 181.5px; /* Ajusta la posición horizontal del sexto texto */
+    top: 145px; /* Ajusta la posición vertical del sexto texto */
+    left: 184.5px; /* Ajusta la posición horizontal del sexto texto */
 }
 
 .Indicador {
-    top: 143px; /* Ajusta la posición vertical del séptimo texto */
-    left: 234.5px; /* Ajusta la posición horizontal del séptimo texto */
+    top: 145px; /* Ajusta la posición vertical del séptimo texto */
+    left: 237.5px; /* Ajusta la posición horizontal del séptimo texto */
 }
 
 .Tarjeta {
-    top: 143px; /* Ajusta la posición vertical del octavo texto */
-    left: 287.5px; /* Ajusta la posición horizontal del octavo texto */
+    top: 145px; /* Ajusta la posición vertical del octavo texto */
+    left: 290.5px; /* Ajusta la posición horizontal del octavo texto */
 }
 
 
