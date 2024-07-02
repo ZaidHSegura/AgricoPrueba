@@ -225,7 +225,7 @@ button.goToMain:hover {
 .Text-status {
     position: absolute;
     top: 35px; /* Ajusta la posición vertical del texto */
-    left: 275px; /* Ajusta la posición horizontal del texto */
+    left: 277px; /* Ajusta la posición horizontal del texto */
     color: black; /* Color del texto */
     background-color: none; /* Fondo semitransparente */
     padding: 5px 10px; /* Espaciado interno */
@@ -249,42 +249,42 @@ button.goToMain:hover {
 
 .Baterias {
     top: 94px; /* Ajusta la posición vertical del primer texto */
-    left: 131.5px; /* Ajusta la posición horizontal del primer texto */
+    left: 133.5px; /* Ajusta la posición horizontal del primer texto */
 }
 
 .MicroSwitch {
     top: 94px; /* Ajusta la posición vertical del segundo texto */
-    left: 184.5px; /* Ajusta la posición horizontal del segundo texto */
+    left: 186.5px; /* Ajusta la posición horizontal del segundo texto */
 }
 
 .Paro {
     top: 94px; /* Ajusta la posición vertical del tercer texto */
-    left: 237.5px; /* Ajusta la posición horizontal del tercer texto */
+    left: 239.5px; /* Ajusta la posición horizontal del tercer texto */
 }
 
 .Potenciometro {
     top: 94px; /* Ajusta la posición vertical del cuarto texto */
-    left: 290.5px; /* Ajusta la posición horizontal del cuarto texto */
+    left: 292.5px; /* Ajusta la posición horizontal del cuarto texto */
 }
 
 .Selector {
     top: 145px; /* Ajusta la posición vertical del quinto texto */
-    left: 131.5px; /* Ajusta la posición horizontal del quinto texto */
+    left: 133.5px; /* Ajusta la posición horizontal del quinto texto */
 }
 
 .Anderson {
     top: 145px; /* Ajusta la posición vertical del sexto texto */
-    left: 184.5px; /* Ajusta la posición horizontal del sexto texto */
+    left: 186.5px; /* Ajusta la posición horizontal del sexto texto */
 }
 
 .Indicador {
     top: 145px; /* Ajusta la posición vertical del séptimo texto */
-    left: 237.5px; /* Ajusta la posición horizontal del séptimo texto */
+    left: 239.5px; /* Ajusta la posición horizontal del séptimo texto */
 }
 
 .Tarjeta {
     top: 145px; /* Ajusta la posición vertical del octavo texto */
-    left: 290.5px; /* Ajusta la posición horizontal del octavo texto */
+    left: 292.5px; /* Ajusta la posición horizontal del octavo texto */
 }
 
 
