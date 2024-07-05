@@ -288,3 +288,22 @@ button.goToMain:hover {
 }
 
 
+/* Estilos para la sección "Escanear código" */
+#scanCodeContent {
+    display: none;
+    text-align: center;
+}
+
+#scanCodeContent h2 {
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+#scanCodeContent p {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+

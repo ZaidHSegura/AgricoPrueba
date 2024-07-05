@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Invernaderos</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://unpkg.com/html5-qrcode/minified/html5-qrcode.min.js"></script>
 </head>
 <body>
     <div class="container" id="mainContainer">
@@ -57,7 +58,7 @@
               <div class="text-Date Indicador">11/11/11</div>
               <div class="text-Date Tarjeta">11/11/11</div>
             </div>
- 
+  
             <div class="section-box">
               <img class="section-image" src="img/C12OTE.png" alt="C22OTE">
               <div class="text-overlay">02</div>
@@ -162,15 +163,17 @@
         </div>
     </div>
 
-<!-- Nueva sección para "Escanear código" -->
-<div class="details" id="scanCodeContent">
+<div id="scanCodeContent">
     <h2>Escanear código</h2>
-    <p>Aquí puedes escanear un código.</p>
+    <p>Coloca el código QR dentro del cuadro para escanear.</p>
+    <div id="reader" style="width: 300px; height: 300px;"></div>
+    <button onclick="stopScanning()">Detener Escaneo</button>
     <div class="button-container">
         <button class="goBack" onclick="goBack()">Volver</button>
+        <button class="goToMain" onclick="goBackToMain()">Inicio</button>
     </div>
 </div>
-
     <script src="js/scripts.js"></script>
 </body>
 </html>
+

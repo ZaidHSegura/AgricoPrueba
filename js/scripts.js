@@ -91,6 +91,12 @@ function goBackToMain() {
     hideAllDetails();
 }
 
+function scanCode() {
+    // Ocultar el contenedor principal y mostrar el contenido de escanear código
+    document.querySelector('#mainContainer').style.display = 'none';
+    document.querySelector('#scanCodeContent').style.display = 'block';
+}
+
 // Función para verificar si un elemento está en el centro de la vista del contenedor
 function isElementInContainerView(element, container) {
     const elementRect = element.getBoundingClientRect();
@@ -125,3 +131,63 @@ sectionsContainer.addEventListener('scroll', applyScrollEffect);
 
 // Aplica el efecto inicialmente
 applyScrollEffect();
+
+// Función para iniciar el escaneo de QR
+function startScanning() {
+    // Crear una instancia de Html5QrcodeScanner
+    const html5QrCode = new Html5Qrcode("reader");
+    
+    // Iniciar el escaneo
+    html5QrCode.start(
+        { facingMode: "environment" }, // Usa la cámara trasera
+        {
+            fps: 10, // Frecuencia de escaneo
+            qrbox: { width: 250, height: 250 } // Tamaño del cuadro de escaneo
+        },
+        qrCodeMessage => {
+            // Callback cuando se detecta un código QR
+            console.log(`QR Code detected: ${qrCodeMessage}`);
+            alert(`Código QR detectado: ${qrCodeMessage}`);
+            html5QrCode.stop().then(() => {
+                // Detener la cámara después de leer el código QR
+                document.querySelector('#reader').innerHTML = "";
+            }).catch(err => {
+                console.log(`Error stopping the camera: ${err}`);
+            });
+        },
+        errorMessage => {
+            // Callback en caso de error de escaneo
+            console.log(`QR Code no match: ${errorMessage}`);
+        }
+    ).catch(err => {
+        // Handle initialization errors
+        console.log(`Error initializing camera: ${err}`);
+    });
+}
+
+// Función para detener el escaneo de QR
+function stopScanning() {
+    Html5Qrcode.getCameras().then(cameras => {
+        if (cameras && cameras.length) {
+            const cameraId = cameras[0].id;
+            const html5QrCode = new Html5Qrcode("reader");
+            html5QrCode.stop().then(() => {
+                document.querySelector('#reader').innerHTML = "";
+            }).catch(err => {
+                console.log(`Error stopping the camera: ${err}`);
+            });
+        }
+    }).catch(err => {
+        console.log(`Error getting cameras: ${err}`);
+    });
+}
+
+// Llama a la función de inicio cuando se abra la sección de escanear código
+function scanCode() {
+    // Ocultar el contenedor principal y mostrar el contenido de escanear código
+    document.querySelector('#mainContainer').style.display = 'none';
+    document.querySelector('#scanCodeContent').style.display = 'block';
+    startScanning();
+}
+
+
