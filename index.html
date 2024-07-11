@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Invernaderos</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script src="https://unpkg.com/html5-qrcode/minified/html5-qrcode.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dynamsoft-javascript-barcode@9.0.0/dist/dbr.js"></script>
 </head>
 <body>
     <div class="container" id="mainContainer">
@@ -45,7 +45,8 @@
             <!-- Secciones numeradas -->
 
             <div class="section-box">
-              <img class="section-image" src="img/C12OTE.png" alt="C12OTE">
+
+              <img class="section-image" src="img/C12OTE.png" id="image1" alt="C12OTE">
               <div class="text-overlay">01</div>
               <div class="Text-name">Zaid Hernandez Segura</div>
               <div class="Text-status">Activo</div>
@@ -60,7 +61,7 @@
             </div>
   
             <div class="section-box">
-              <img class="section-image" src="img/C12OTE.png" alt="C22OTE">
+              <img class="section-image" src="img/C12OTE.png" id="image2"alt="C22OTE">
               <div class="text-overlay">02</div>
               <div class="Text-name">Zaid Hernandez Segura</div>
               <div class="Text-status">Activo</div>
@@ -75,7 +76,7 @@
             </div>
 
             <div class="section-box">
-              <img class="section-image" src="img/C12OTE.png" alt="C32OTE">
+              <img class="section-image" src="img/C12OTE.png" id="image3" alt="C32OTE">
               <div class="text-overlay">03</div>
               <div class="Text-name">Zaid Hernandez Segura</div>
               <div class="Text-status">Activo</div>
@@ -88,6 +89,39 @@
               <div class="text-Date Indicador">11/11/11</div>
               <div class="text-Date Tarjeta">11/11/11</div>
             </div>
+
+            <div class="section-box">
+              <img class="section-image" src="img/C12OTE.png" id="image4"alt="C22OTE">
+              <div class="text-overlay">04</div>
+              <div class="Text-name">Zaid Hernandez Segura</div>
+              <div class="Text-status">Activo</div>
+              <div class="text-Date Baterias">11/11/11</div>
+              <div class="text-Date MicroSwitch">11/11/11</div>
+              <div class="text-Date Paro">11/11/11</div>
+              <div class="text-Date Potenciometro">11/11/11</div>
+              <div class="text-Date Selector">11/11/11</div>
+              <div class="text-Date Anderson">11/11/11</div>
+              <div class="text-Date Indicador">11/11/11</div>
+              <div class="text-Date Tarjeta">11/11/11</div>
+            </div>
+
+            <div class="section-box">
+              <img class="section-image" src="img/C12OTE.png" id="image5"alt="C22OTE">
+              <div class="text-overlay">05</div>
+              <div class="Text-name">Zaid Hernandez Segura</div>
+              <div class="Text-status">Activo</div>
+              <div class="text-Date Baterias">11/11/11</div>
+              <div class="text-Date MicroSwitch">11/11/11</div>
+              <div class="text-Date Paro">11/11/11</div>
+              <div class="text-Date Potenciometro">11/11/11</div>
+              <div class="text-Date Selector">11/11/11</div>
+              <div class="text-Date Anderson">11/11/11</div>
+              <div class="text-Date Indicador">11/11/11</div>
+              <div class="text-Date Tarjeta">11/11/11</div>
+            </div>
+
+
+
         </div>
     </div>
     
@@ -163,16 +197,19 @@
         </div>
     </div>
 
-<div id="scanCodeContent">
-    <h2>Escanear código</h2>
-    <p>Coloca el código QR dentro del cuadro para escanear.</p>
-    <div id="reader" style="width: 300px; height: 300px;"></div>
-    <button onclick="stopScanning()">Detener Escaneo</button>
-    <div class="button-container">
-        <button class="goBack" onclick="goBack()">Volver</button>
-        <button class="goToMain" onclick="goBackToMain()">Inicio</button>
-    </div>
-</div>
+    <!-- Nueva sección para "Escanear código" -->
+    <div class="details" id="scanCodeContent">
+        <h2>Escanear código</h2>
+        <p>Aquí puedes escanear un código.</p>
+    <p>Ingrese el ID de la imagen:</p>
+    <input type="text" id="imageIdInput" placeholder="Ingrese ID">
+    <button onclick="goToImageById()">Ir</button>
+        <div class="button-container">
+            <button class="goBack" onclick="goBack()">Volver</button>
+        </div>
+    </div> 
+
+
     <script src="js/scripts.js"></script>
 </body>
 </html>
